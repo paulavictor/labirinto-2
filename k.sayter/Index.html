@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labirinto em JavaScript</title>
+    <style>
+        #labirinto {
+            display: grid;
+            grid-template-columns: repeat(11, 60px);
+            grid-gap: 3px;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 2px solid #ccc;
+            font-size: 30px;
+            background-color: white;
+        }
+        .player {
+            background-color: rgb(0, 255, 94);
+        }
+        .start {
+            background-color: red;
+            color: white;
+        }
+        .end {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="labirinto"></div>
+    <script src="script.js"></script>
+</body>
+</html>
